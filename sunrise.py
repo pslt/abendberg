@@ -5,7 +5,7 @@ def print_sun_info(_location, _date):
     print('Information for %s/%s\n' % (_location.name, _location.region))
     print('Date: %s' % _date)
     print('Timezone:  %s' % _location.timezone)
-    print('Position:  %.02f / %.02f\n' % (_location.latitude, _location.longitude))
+    print('Position:  %.04f / %.04f\n' % (_location.latitude, _location.longitude))
 
     _sun = _location.sun(date=_date, local=True)
     _daylight = _location.daylight(date=_date, local=True)
